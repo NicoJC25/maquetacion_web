@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario basico</title>
+    <link rel="icon" href="images/logo.jpg">
+    <link rel="stylesheet" href="estilos/estilo-resto.css">
+
+    <script>
+        function enviar(){
+            alert("Enviando datos...");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Entradas basicas</h1>
+    </header>
+
+    <div class="contenido-basico">
+        <form class="form-basico" action="#">
+            <div class="titulo">
+                <h2>Inputs basicos</h2>
+            </div>
+            <div class="entrada">
+                <label> Entrada tipo texto </label>
+                <input type="text" placeholder="Nombre Completo">
+            </div>
+            <div class="entrada">
+                <label> Entrada tipo email </label>
+                <input type="email" placeholder="ejemplo@gmail.com">
+            </div>
+            <div class="entrada">
+                <label> Entrada tipo menu desplegable </label>
+                <select>
+                    <option>    </option>
+                    <option>Opcion 1</option>
+                    <option>Opcion 2</option>
+                    <option>Opcion 3</option>
+                </select>
+            </div>
+            <div class="entrada">
+                <label> Entrada tipo clave </label>
+                <input type="password" placeholder="Ejemplo1234@">
+            </div>
+            <div class="entrada">
+                <label> Entrada tipo caja de verificacion </label>
+                <div class="verificacion">
+                    <input type="checkbox"><label>Acepto terminos</label>
+                </div>
+            </div>
+            <div class="opciones">
+                <label>Entrada tipo opciones redondas</label>
+                <div>
+                    <input type="radio" name="radio"><span>Opcion 1</span>
+                </div>
+                <div>
+                    <input type="radio" name="radio"><span>Opcion 2</span>
+                </div>
+                <div>
+                    <input type="radio" name="radio"><span>Opcion 3</span>
+                </div>
+            </div>
+            <div class="entrada">
+                <label>Entrada tipo area grande de texto (300 caracteres)</label>
+                <textarea></textarea>
+            </div>
+            <div class="boton">
+                <input type="button" value="Enviar" onclick="enviar()">
+            </div>
+        </form>
+    </div>
+    <footer>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="basico.html" class="activo">Entradas basicas</a></li>
+                <li><a href="registro.html">Form registro</a></li>
+                <li><a href="acceso.html">Iniciar sesion</a></li>
+                <li><a href="buscar.html">Buscar</a></li>
+                <li><a href="validacion.html">Validar</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
