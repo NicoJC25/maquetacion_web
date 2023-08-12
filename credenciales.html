@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y registro</title>
+    <link rel="stylesheet" href="estilos/estilos-credenciales.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class = "menu container">
+            <a href="#" class="logo">Logo</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="basico.html">Entradas basicas</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                    <li><a href="ingreso.html">Iniciar sesion</a></li>
+                    <li><a href="validacion.html">Validacion</a></li>
+                </ul>
+            </nav>
+        </div>
+	</header>
+    
+    <main>
+
+        <div class="contenedor__todo">
+
+            <div class="caja__trasera">
+                <div class="caja__trasera-login">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Iniciar sesion para entrar en la pagina</p>
+                    <button id="btn__iniciar-sesion">Iniciar sesion</button>
+                </div>
+                <div class="caja__trasera-register">
+                    <h3>¿Aun no tienes una cuenta?</h3>
+                    <p>Registrate para que puedas iniciar sesion :D</p>
+                    <button id="btn__registrarse">Registrarse</button>
+                </div>
+            </div>
+
+            <div class="contenedor__login-register">
+
+                <form action="" class="formulario__login">
+
+                    <h2>Iniciar Sesion</h2>
+                    <input type="email" placeholder="Correo Electronico">
+                    <div class="campo-valido">
+                        Correcto :D
+                    </div>
+                    <div class="campo-invalido">
+                        Ingresa el dato correcto D:
+                    </div>
+
+
+                    <input type="password" placeholder="Contraseña">
+                    <button class="submit">Entrar</button>
+
+                </form>
+
+                <form action="" class="formulario__register">
+
+                    <h2>Registrarse</h2>
+                    <input type="text" placeholder="Nombre completo" name="nombre_completo">
+                    <input type="email" placeholder="Correo electronico" name="correo">
+                    <input type="text" placeholder="Usuario" name="usuario">
+                    <input type="password" placeholder="Contraseña" name="contrasena">
+                    <button class="">Registrarse</button>
+
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    
+    
+    <script src="js/credenciales.js"></script>
+</body>
+</html>

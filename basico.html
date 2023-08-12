@@ -3,85 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario basico</title>
+    <title>inputs basicos</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
     <link rel="icon" href="images/logo.jpg">
-    <link rel="stylesheet" href="estilos/estilo-resto.css">
-
-    <script>
-        function enviar(){
-            alert("Enviando datos...");
-        }
-    </script>
+    <link rel="stylesheet" href="estilos/estilo-basico.css">
 </head>
 <body>
-    <header>
-        <h1>Entradas basicas</h1>
-    </header>
+    <header class="header">
+        <div class = "menu container">
+            <a href="index.html" class="logo">Logo</a>
+			<h1>INPUTS BASICOS</h1>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="basico.html">Entradas basicas</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                    <li><a href="ingreso.html">Iniciar sesion</a></li>
+                    <li><a href="validacion.html">Validacion</a></li>
+                </ul>
+            </nav>
+        </div>
+	</header>
 
-    <div class="contenido-basico">
-        <form class="form-basico" action="#">
-            <div class="titulo">
-                <h2>Inputs basicos</h2>
+    <main>
+        <form class="formulario" id="formulario">
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label"> Entrada tipo texto </label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" placeholder="Nombre Completo">
+                </div>
             </div>
-            <div class="entrada">
-                <label> Entrada tipo texto </label>
-                <input type="text" placeholder="Nombre Completo">
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="email" class="formulario__label"> Entrada tipo email </label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" placeholder="ejemplo@gmail.com">
+                </div>
             </div>
-            <div class="entrada">
-                <label> Entrada tipo email </label>
-                <input type="email" placeholder="ejemplo@gmail.com">
-            </div>
-            <div class="entrada">
-                <label> Entrada tipo menu desplegable </label>
+            <div class="formulario__grupo" id="grupo__menu">
+                <label for="menu" class="formulario__label"> Entrada tipo menu desplegable </label>
+                    <div class="formulario__grupo-input">
                 <select>
                     <option>    </option>
                     <option>Opcion 1</option>
                     <option>Opcion 2</option>
                     <option>Opcion 3</option>
                 </select>
-            </div>
-            <div class="entrada">
-                <label> Entrada tipo clave </label>
-                <input type="password" placeholder="Ejemplo1234@">
-            </div>
-            <div class="entrada">
-                <label> Entrada tipo caja de verificacion </label>
-                <div class="verificacion">
-                    <input type="checkbox"><label>Acepto terminos</label>
                 </div>
             </div>
-            <div class="opciones">
-                <label>Entrada tipo opciones redondas</label>
+            <div class="formulario__grupo" id="grupo__password">
+                <label for="password" class="formulario__label"> Entrada tipo clave </label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password" placeholder="Ejemplo1234@">
+                </div>
+            </div>
+            <div class="formulario__grupo" id="grupo__terminos">
+                <label class="formulario__label"> Entrada tipo caja de verificacion </label>
+                    <input class="formulario__checkbox" type="checkbox" name="terminos">
+                    <label class="formulario__label">Acepto terminos</label>
+                </div>
+            </div>
+            <div class="formulario__grupo">
+                <label class="formulario__label">Entrada tipo opciones redondas</label>
                 <div>
-                    <input type="radio" name="radio"><span>Opcion 1</span>
+                    <input type="radio" name="radio"><span class="formulario__label">Opcion 1</span>
                 </div>
                 <div>
-                    <input type="radio" name="radio"><span>Opcion 2</span>
+                    <input type="radio" name="radio"><span class="formulario__label">Opcion 2</span>
                 </div>
                 <div>
-                    <input type="radio" name="radio"><span>Opcion 3</span>
+                    <input type="radio" name="radio"><span class="formulario__label">Opcion 3</span>
                 </div>
             </div>
-            <div class="entrada">
-                <label>Entrada tipo area grande de texto (300 caracteres)</label>
-                <textarea></textarea>
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label class="formulario__label">Entrada tipo area grande de texto (300 caracteres)</label>
+                <div class="formulario__grupo-input">
+                    <textarea class="formulario__input" name="texto_largo"></textarea>
+                </div>
             </div>
-            <div class="boton">
-                <input type="button" value="Enviar" onclick="enviar()">
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Boton de envio</button>
             </div>
         </form>
-    </div>
-    <footer>
-        <div class="menu">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="basico.html" class="activo">Entradas basicas</a></li>
-                <li><a href="registro.html">Form registro</a></li>
-                <li><a href="acceso.html">Iniciar sesion</a></li>
-                <li><a href="buscar.html">Buscar</a></li>
-                <li><a href="validacion.html">Validar</a></li>
-            </ul>
-        </div>
-    </footer>
+    <main>
+    
 </body>
 </html>

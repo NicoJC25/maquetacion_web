@@ -12,7 +12,8 @@
 <body>
     <header class="header">
             <div class = "menu container">
-                <a href="#" class="logo">Logo</a>
+                <a href="index.html" class="logo">Logo</a>
+				<h1>SOLICITUD DE INVESTIGACION</h1>
                 <input type="checkbox" id="menu" />
                 <label for="menu">
                     <img src="images/menu.png" class="menu-icono" alt="">
@@ -22,11 +23,12 @@
                         <li><a href="index.html">Inicio</a></li>
                         <li><a href="basico.html">Entradas basicas</a></li>
                         <li><a href="registro.html">Registro</a></li>
-                        <li><a href="iniciar.html">Iniciar sesion</a></li>
+                        <li><a href="ingreso.html">Iniciar sesion</a></li>
                         <li><a href="validacion.html">Validacion</a></li>
                     </ul>
                 </nav>
             </div>
+	</header>
 	<main>
 		<form action="" class="formulario" id="formulario">
 			<!-- Grupo: Nombre -->
@@ -59,13 +61,13 @@
 			</div>
 
             <!-- Grupo: Texto de explicacion -->
-			<div class="formulario__grupo" id="grupo__textolargo">
-				<label for="textolargo" class="formulario__label">Explicacion de su caso</label>
-				<div class="formulario__grupo-input">
-					<input type="textarea" class="formulario__input" name="textolargo" id="textolargo">
+			<div class="formulario__grupo" id="grupo__explicacion">
+				<label for="explicacion" class="formulario__label">Explicacion de su caso</label>
+				<div class="formulario__grupo-input-explicacion">
+					<input type="textarea" class="formulario__input-explicacion" name="explicacion" id="explicacion">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
-				<p class="formulario__input-error">Explique brevemente su caso</p>
+				<p class="formulario__input-error">La explicacion no debe de tener mas de 4000 caracteres ni caracteres especiales</p>
 			</div>
 
 
@@ -78,17 +80,17 @@
 			</div>
 
 			<div class="formulario__mensaje" id="formulario__mensaje">
-				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena la solicitud correctamente. </p>
 			</div>
 
 			<div class="formulario__grupo formulario__grupo-btn-enviar">
 				<button type="submit" class="formulario__btn">Enviar</button>
-				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Solicitud enviada exitosamente! Nos contactaremos contigo si decidimos aceptar tu caso :D</p>
 			</div>
 		</form>
 	</main>
     
-    <script src="js/registro.js"></script>
+    <script src="js/validacion.js"></script>
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
 </html>

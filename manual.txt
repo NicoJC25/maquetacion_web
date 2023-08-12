@@ -1,0 +1,38 @@
+Este archivo contiene en total 5 interfaces:
+
+-Index
+-Inputs basicos
+-Registro
+-Iniciar sesion
+-Validacion
+
+La pagina tiene como tematica investigaciones privadas inspiradas en un libro.
+
+El index contiene toda la informacion de la pagina adicional a una parte arriba a la derecha
+donde se puede realizar una busqueda acerca de un tema en especifico y arroja el resultado correspondiente
+adicional a unas sugerencias aportadas por la pagina.
+
+La parte de inputs basicos solo es un formulario de pruebas que contiene varios tipos
+de entradas o inputs.
+
+La interfaz de registro tiene como objetivo que el usuario se registre por si
+quiere servicios adicionales o es constante en sus solicitudes. Tiene validacion
+de todos sus datos.
+
+La interfaz de iniciar sesion esta validada y al igual que registro, un
+formulario para acceder a la cuenta.
+
+La interfaz de validacion tiene como tematica mandar un formulario de alguien
+que requiera el servicio mandando ciertos datos personales y una especificacion
+de lo que requiere, esta validado el formulario.
+
+
+Cada interfaz tiene su apartado de estilos, cada archivo llamado como su principal en html
+y los que lo requieran tienen su archivo en javascript en la carpeta js.
+
+Finalmente, hay un archivo que tiene tanto estilo como js que no esta en uso debido
+a que no encontre la forma de asignarle logica en js, este se llama credenciales
+y como se ve, tenia el proposito de optimizar tanto el registro como el inicio de sesion
+poniendo ambos en una sola interfaz.
+
+Muchas gracias :D

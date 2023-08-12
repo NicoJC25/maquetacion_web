@@ -11,7 +11,8 @@
 <body>
 	<header class="header">
         <div class = "menu container">
-            <a href="#" class="logo">Logo</a>
+            <a href="index.html" class="logo">Logo</a>
+			<h1>REGISTRO</h1>
             <input type="checkbox" id="menu" />
             <label for="menu">
                 <img src="images/menu.png" class="menu-icono" alt="">
@@ -21,18 +22,19 @@
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="basico.html">Entradas basicas</a></li>
                     <li><a href="registro.html">Registro</a></li>
-                    <li><a href="iniciar.html">Iniciar sesion</a></li>
+                    <li><a href="ingreso.html">Iniciar sesion</a></li>
                     <li><a href="validacion.html">Validacion</a></li>
                 </ul>
             </nav>
         </div>
+	</header>
 	<main>
 		<form action="" class="formulario" id="formulario">
 			<!-- Grupo: Usuario -->
 			<div class="formulario__grupo" id="grupo__usuario">
 				<label for="usuario" class="formulario__label">Usuario</label>
 				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="john123">
+					<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="nico789">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
@@ -42,7 +44,7 @@
 			<div class="formulario__grupo" id="grupo__nombre">
 				<label for="nombre" class="formulario__label">Nombre</label>
 				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nicolas Juez">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
@@ -82,7 +84,7 @@
 			<div class="formulario__grupo" id="grupo__telefono">
 				<label for="telefono" class="formulario__label">Teléfono</label>
 				<div class="formulario__grupo-input">
-					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="32022233344">
 					<i class="formulario__validacion-estado fas fa-times-circle"></i>
 				</div>
 				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
@@ -101,7 +103,7 @@
 			</div>
 
 			<div class="formulario__grupo formulario__grupo-btn-enviar">
-				<button type="submit" class="formulario__btn">Enviar</button>
+				<button type="submit" class="formulario__btn">Registrarse</button>
 				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
 			</div>
 		</form>
